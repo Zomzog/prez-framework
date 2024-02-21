@@ -32,19 +32,19 @@ function addNoJekyllForGithub(cb) {
 const init = series(addRevealCssDependencies, addRevealJsDependencies, addNoJekyllForGithub, addRevealJsPlugins)
 
 function convert(cb) {
-    return src('build/**/*.adoc')
+    return src('build/dist/index.adoc')
         .pipe(convertToHtml())
     cb();
 }
 
 function copyAdoc(cb) {
-    src('slides/**/*.adoc')
+    return src('slides/**/*.adoc')
         .pipe(dest('build/dist'))
     cb();
 }
 
 function copyStatics(cb) {
-  src('slides/**/*.{svg,png,jpg,jpeg,gif,webp,css,js}')
+  return src('slides/**/*.{svg,png,jpg,jpeg,gif,webp,css,js}')
     .pipe(dest('build/dist'))
     cb();
 }
@@ -56,13 +56,13 @@ function copyPlugins(cb) {
 }
 
 function copyProvidedHtml(cb) {
-    src('slides/html/*.html')
+    return src('slides/html/*.html')
       .pipe(dest('build/dist'))
       cb();
   }
 
 
-const build = series(parallel(copyProvidedHtml, copyAdoc, copyStatics, copyPlugins), convert)
+const build = series(copyAdoc, parallel(copyProvidedHtml, copyStatics, copyPlugins), convert)
 
 function watchFiles() {
     watch("slides/css/**/*", series(copyStatics, browserSyncStream))
