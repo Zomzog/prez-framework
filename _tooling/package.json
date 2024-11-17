@@ -20,7 +20,7 @@
   "homepage": "https://github.com/zomzog/prez#readme",
   "dependencies": {
     "@asciidoctor/reveal.js": "^5.0.1",
-    "asciidoctor": "^2.2.5",
+    "asciidoctor": "^3.0.0",
     "asciidoctor-kroki": "^0.18.1",
     "del": "^6.0.0",
     "map-stream": "0.0.7",
