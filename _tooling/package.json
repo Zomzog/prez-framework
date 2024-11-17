@@ -22,7 +22,7 @@
     "@asciidoctor/reveal.js": "^5.0.1",
     "asciidoctor": "^3.0.0",
     "asciidoctor-kroki": "^0.18.1",
-    "del": "^6.0.0",
+    "del": "^8.0.0",
     "map-stream": "0.0.7",
     "reveal.js": "4.5.0",
     "reveal.js-menu": "^2.1.0"
