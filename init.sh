@@ -39,7 +39,6 @@ echo "## $name" >> $slides/index.adoc
 echo "Add submodule"
 cd $path
 git init
-
 git submodule add git@github.com:Zomzog/prez-framework.git
 
 echo "Create links"
@@ -58,3 +57,4 @@ npm install
 echo "First commit"
 git add .
 git commit -m "First commit"
+git branch -M main
