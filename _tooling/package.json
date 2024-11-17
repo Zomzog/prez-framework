@@ -19,15 +19,15 @@
     },
     "homepage": "https://github.com/zomzog/prez#readme",
     "dependencies": {
-        "@asciidoctor/reveal.js": "^5.0.1",
-        "asciidoctor": "^3.0.0",
-        "asciidoctor-kroki": "^0.18.1",
+        "@asciidoctor/reveal.js": "5.1.0",
+        "asciidoctor": "3.0.4",
+        "asciidoctor-kroki": "0.18.1",
         "map-stream": "0.0.7",
         "reveal.js": "5.1.0",
-        "reveal.js-menu": "^2.1.0"
+        "reveal.js-menu": "2.1.0"
     },
     "devDependencies": {
-        "browser-sync": "^3.0.0",
-        "gulp": "^4.0.2"
+        "browser-sync": "3.0.3",
+        "gulp": "4.0.2"
     }
 }
