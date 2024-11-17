@@ -1,6 +1,4 @@
 const { src, dest, watch, series, parallel } = require('gulp');
-const tap = require('gulp-tap')
-const del = require('del');
 
 const convertToHtml = require('./convert-to-html');
 const browsersync = require("browser-sync").create();
@@ -44,8 +42,8 @@ function copyAdoc(cb) {
 }
 
 function copyStatics(cb) {
-  return src('slides/**/*.{svg,png,jpg,jpeg,gif,webp,css,js}')
-    .pipe(dest('build/dist'))
+    return src('slides/**/*.{svg,png,jpg,jpeg,gif,webp,css,js}')
+        .pipe(dest('build/dist'))
     cb();
 }
 
@@ -57,9 +55,9 @@ function copyPlugins(cb) {
 
 function copyProvidedHtml(cb) {
     return src('slides/html/*.html')
-      .pipe(dest('build/dist'))
-      cb();
-  }
+        .pipe(dest('build/dist'))
+    cb();
+}
 
 
 const build = series(copyAdoc, parallel(copyProvidedHtml, copyStatics, copyPlugins), convert)
@@ -76,11 +74,11 @@ function watchFiles() {
 // BrowserSync
 function browserSync(done) {
     browsersync.init({
-      server: {
-        baseDir: "./build/dist/"
-      },
-      notify: false,
-      port: 3000
+        server: {
+            baseDir: "./build/dist/"
+        },
+        notify: false,
+        port: 3000
     });
     done();
 }

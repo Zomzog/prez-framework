@@ -1,35 +1,33 @@
 {
-  "name": "Pony",
-  "version": "1.0.0",
-  "description": "My Little Slides",
-  "main": "index.js",
-  "scripts": {
-    "convert": "node asciidoctor-revealjs.js",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "watch": "nodemon --watch src -x \"npm run convert\""
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+ssh://git@github.com/zomzog/prez.git"
-  },
-  "author": "Thibault Duperron",
-  "license": "GPL-3.0-or-later",
-  "bugs": {
-    "url": "https://github.com/zomzog/prez/issues"
-  },
-  "homepage": "https://github.com/zomzog/prez#readme",
-  "dependencies": {
-    "@asciidoctor/reveal.js": "^5.0.1",
-    "asciidoctor": "^3.0.0",
-    "asciidoctor-kroki": "^0.18.1",
-    "del": "^6.0.0",
-    "map-stream": "0.0.7",
-    "reveal.js": "4.5.0",
-    "reveal.js-menu": "^2.1.0"
-  },
-  "devDependencies": {
-    "browser-sync": "^3.0.0",
-    "gulp": "^4.0.2",
-    "gulp-tap": "^2.0.0"
-  }
+    "name": "Pony",
+    "version": "1.0.0",
+    "description": "My Little Slides",
+    "main": "index.js",
+    "scripts": {
+        "convert": "node asciidoctor-revealjs.js",
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "watch": "nodemon --watch src -x \"npm run convert\""
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+ssh://git@github.com/zomzog/prez.git"
+    },
+    "author": "Thibault Duperron",
+    "license": "GPL-3.0-or-later",
+    "bugs": {
+        "url": "https://github.com/zomzog/prez/issues"
+    },
+    "homepage": "https://github.com/zomzog/prez#readme",
+    "dependencies": {
+        "@asciidoctor/reveal.js": "^5.0.1",
+        "asciidoctor": "^3.0.0",
+        "asciidoctor-kroki": "^0.18.1",
+        "map-stream": "0.0.7",
+        "reveal.js": "4.5.0",
+        "reveal.js-menu": "^2.1.0"
+    },
+    "devDependencies": {
+        "browser-sync": "^3.0.0",
+        "gulp": "^4.0.2"
+    }
 }
