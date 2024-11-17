@@ -23,7 +23,7 @@
         "asciidoctor": "^3.0.0",
         "asciidoctor-kroki": "^0.18.1",
         "map-stream": "0.0.7",
-        "reveal.js": "4.5.0",
+        "reveal.js": "4.6.1",
         "reveal.js-menu": "^2.1.0"
     },
     "devDependencies": {
