@@ -27,7 +27,7 @@
         "reveal.js-menu": "2.1.0"
     },
     "devDependencies": {
-        "browser-sync": "3.0.3",
+        "browser-sync": "3.0.4",
         "gulp": "4.0.2"
     }
 }
