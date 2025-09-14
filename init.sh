@@ -20,6 +20,8 @@ fi
 
 echo "Create folders"
 mkdir -p $slides/images
+mkdir -p $slides/pages
+mkdir -p $slides/components
 
 if [[ -d $slides/slides.md ]]; then
     echo "slides.md already exist"
@@ -35,12 +37,11 @@ git init
 git submodule add git@github.com:Zomzog/prez-framework.git
 
 echo "Create links"
-ln -srf prez-framework/_slides/.* $slides/
-ln -srf prez-framework/_slides/*.json $slides/
-ln -srf prez-framework/_slides/*.toml $slides/
+ln -srf prez-framework/_slides/pages/* $slides/pages/
 ln -srf prez-framework/_slides/images/* $slides/images/
 
 ln -srf prez-framework/_tooling/* $slides
+ln -srf prez-framework/_tooling/components/* $slides/components/
 ln -srf prez-framework/_tooling/.nojekyll $path/.nojekyll
 
 ln -srf prez-framework/_github $path/.github
