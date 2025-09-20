@@ -22,6 +22,7 @@ echo "Create folders"
 mkdir -p $slides/images
 mkdir -p $slides/pages
 mkdir -p $slides/components
+mkdir -p $slides/layouts
 
 if [[ -d $slides/slides.md ]]; then
     echo "slides.md already exist"
@@ -42,6 +43,7 @@ ln -srf prez-framework/_slides/images/* $slides/images/
 
 ln -srf prez-framework/_tooling/* $slides
 ln -srf prez-framework/_tooling/components/* $slides/components/
+ln -srf prez-framework/_tooling/layouts/* $slides/components/
 ln -srf prez-framework/_tooling/.nojekyll $path/.nojekyll
 
 ln -srf prez-framework/_github $path/.github
