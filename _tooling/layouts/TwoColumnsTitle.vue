@@ -9,6 +9,10 @@ const props = defineProps({
 
 <template>
   <div class="slidev-layout two-columns w-full h-full grid grid-rows-[auto_1fr] p-16">
+    <div class="slide-title mb-8">
+      <slot name="title" />
+    </div>
+
     <div class="grid grid-cols-2 gap-8 h-full">
       <div class="col-left" :class="props.columnClass">
         <slot name="left"/>
