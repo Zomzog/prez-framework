@@ -8,12 +8,12 @@ const props = defineProps({
 </script>
 
 <template>
-  <div class="slidev-layout two-columns w-full h-full grid grid-rows-[auto_1fr] p-16">
+  <div class="slidev-layout two-columns full w-full h-full grid grid-rows-[auto_1fr] p-16">
     <div class="grid grid-cols-2 gap-8 h-full">
-      <div class="col-left" :class="props.columnClass">
+      <div class="w-full" :class="props.columnClass">
         <slot name="left"/>
       </div>
-      <div class="col-right" :class="props.columnClass">
+      <div class="w-full" :class="props.columnClass">
         <slot name="right" />
       </div>
     </div>
