@@ -14,10 +14,10 @@ const props = defineProps({
     </div>
 
     <div class="grid grid-cols-2 gap-8 h-full">
-      <div class="col-left" :class="props.columnClass">
+      <div class="w-full" :class="props.columnClass">
         <slot name="left"/>
       </div>
-      <div class="col-right" :class="props.columnClass">
+      <div class="w-full" :class="props.columnClass">
         <slot name="right" />
       </div>
     </div>
