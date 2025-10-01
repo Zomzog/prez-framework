@@ -21,11 +21,6 @@ const props = defineProps({
 </template>
 
 <style>
-/* Basic styling for the title slot if needed */
-.slidev-layout.two-columns .slide-title {
-  /* You can add text alignment or font size adjustments here if your theme doesn't handle H1/H2 well in this slot */
-  text-align: center; /* Example: center the title */
-}
 
 /* Ensure content within columns starts at the same top level */
 /* This is still good practice to prevent internal element margins from misaligning content within their columns */
