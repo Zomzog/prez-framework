@@ -8,12 +8,12 @@ const props = defineProps({
 </script>
 
 <template>
-  <div class="slidev-layout two-columns w-full h-full grid grid-rows-[auto_1fr] p-16">
+  <div class="slidev-layout two-columns w-full h-full grid grid-rows-[auto_1fr] p-4">
     <div class="slide-title mb-8">
       <slot name="title" />
     </div>
 
-    <div class="grid grid-cols-2 gap-8 h-full">
+    <div class="grid grid-cols-2 gap-2 h-full">
       <div class="w-full" :class="props.columnClass">
         <slot name="left"/>
       </div>
@@ -28,7 +28,7 @@ const props = defineProps({
 /* Basic styling for the title slot if needed */
 .slidev-layout.two-columns .slide-title {
   /* You can add text alignment or font size adjustments here if your theme doesn't handle H1/H2 well in this slot */
-  text-align: center; /* Example: center the title */
+  text-align: left; /* Example: center the title */
 }
 
 /* Ensure content within columns starts at the same top level */
