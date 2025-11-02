@@ -45,6 +45,8 @@ ln -srf prez-framework/_tooling/*.* $slides
 ln -srf prez-framework/_tooling/components/* $slides/components/
 ln -srf prez-framework/_tooling/layouts/* $slides/layouts/
 ln -srf prez-framework/_tooling/.nojekyll $path/.nojekyll
+ln -srf prez-framework/_tooling/.markdownlint.yaml $path/.markdownlint.yaml
+ln -srf prez-framework/_tooling/.prettierrc $path/.prettierrc
 
 ln -srf prez-framework/_github $path/.github
 cp prez-framework/.gitignore $path/.gitignore
